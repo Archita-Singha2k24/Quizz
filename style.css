@@ -253,3 +253,12 @@ padding: 12px 20px;
 .fade-transition {
     transition: background-image 0.5s ease-in-out, color 0.5s ease-in-out;
 }
+.conf-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 116px;
+}
+#toggleButton {
+    margin-left: auto; 
+}
