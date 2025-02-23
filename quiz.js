@@ -1,8 +1,12 @@
 const toggleButton = document.getElementById("toggleButton");
 
 toggleButton.addEventListener("click", () => {
+    document.body.classList.add("fade-transition");
     document.body.classList.toggle("dark-mode");
-
+    
+    setTimeout(() => {
+        document.body.classList.remove("fade-transition"); 
+    }, 500);
     
     if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
